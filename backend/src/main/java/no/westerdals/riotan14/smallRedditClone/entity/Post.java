@@ -1,7 +1,7 @@
 package no.westerdals.riotan14.smallRedditClone.entity;
 
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -11,21 +11,33 @@ import java.util.List;
  */
 
 @NamedQueries({
-        @NamedQuery(name = Post.GET_COUNTRIES, query = "SELECT COUNT(e) FROM Post e WHERE u.country = :ucountry")
+        @NamedQuery(name = Post.GET_COUNT_OF_POSTS_FROM_COUTRY, query = "SELECT COUNT(e) FROM Post e JOIN User u WHERE u.country = :ucountry"),
+        @NamedQuery(name = Post.GET_TOTAL_POST_COUNT, query = "SELECT COUNT(e) FROM Post e")
 })
+@Entity
 public class Post {
 
-    public static final String GET_COUNTRIES = "POST_GET_ALL";
+    public static final String GET_COUNT_OF_POSTS_FROM_COUTRY = "GET_COUNT_OF_POSTS_FROM_COUTRY";
+    public static final String GET_TOTAL_POST_COUNT = "GET_TOTAL_POST_COUNT";
 
+    @Id @GeneratedValue
+    private Long postId;
+
+    @OneToMany(mappedBy = "userComments", fetch= FetchType.EAGER)
     private List<Comment> userComments;
+
     private String author;
+
     private String content;
-    private Date
+
+    private int numberOfUpvotes;
+
+    private int numberOfDownvotes;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date timeOfPostPublished;
 
     /*
-    * Should contain info on the author,
-the text of the news, when it was created, how many people up/down-voted it, etc. It can
-have one or more comments by other users.
 */
 
 }

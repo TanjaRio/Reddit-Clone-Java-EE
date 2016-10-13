@@ -6,6 +6,7 @@ import no.westerdals.riotan14.smallRedditClone.ejb.UserEJB;
 import no.westerdals.riotan14.smallRedditClone.entity.User;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
+import org.jboss.arquillian.test.spi.ArquillianProxyException;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.After;
@@ -17,6 +18,8 @@ import org.pg5100.exam_example.backend.util.DeleterEJB;
 
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -44,28 +47,37 @@ public class UserEJBTest {
 
     @Before
     @After
-    public void emptyDatabase(){
+    public void emptyDatabase() {
         deleterEJB.deleteEntities(User.class);
     }
 
 
-    private boolean createUser(String user, String password){
-        return userEJB.createUser(user,password,"a","b","c","Norway");
+    private boolean createUser(String user, String password) {
+        return userEJB.createUser(user, password, "a", "b", "c", "Norway");
     }
 
     @Test
-    public void testAttendEvent(){
+    public void testCreateUser() {
 
         String userId = "user";
         String password = "password";
-        createUser(userId,password);
+        String email = "123456@gmail.com";
+        String country = "Norway";
+        String firstName = "John";
+        String middleName = "";
+        String lastName = "Doe";
+        userEJB.createUser(userId, password, firstName, null, lastName, email, country);
 
-        Long eventId = eventEjb.createEvent("title","text","Norway","location",userId);
-        assertFalse(userEJB.isUserAttendingEvent(userId, eventId));
-
-        userEJB.addEvent(userId, eventId);
-        assertTrue(userEJB.isUserAttendingEvent(userId, eventId));
-
-        userEJB.removeEvent(userId, eventId);
-        assertFalse(userEJB.isUserAttendingEvent(userId, eventId));
     }
+
+    @Test(expected = ArquillianProxyException.class)public void testUserCannotBeCreatedWithoutName() {
+        userEJB.createUser(null, "Anna", "surname", "name@surname.com", "12we34ty", "2", "");
+    }
+
+    @Test
+    public void testGetAllUsers() {
+        userEJB.createUser(user, password, "a", "b", "c", "Norway")
+        List<User> userList = userEJB.getAllUsers();
+    }
+
+}

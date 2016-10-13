@@ -1,29 +1,27 @@
 package no.westerdals.riotan14.smallRedditClone.entity;
 
 import com.sun.istack.internal.NotNull;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Created by Tanja Guntvedt Rio
- * PG5100 - Enterprise Programmering 1
- * Westerdals Oslo ACT
- */
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name = User.GET_ALL, query = "SELECT u FROM User u"),
-        @NamedQuery(name = User.GET_COUNTRY, query = "SELECT e FROM User e WHERE u.country = :ucountry")
+        @NamedQuery(name = User.GET_ALL, query = "SELECT e FROM User e"),
+        @NamedQuery(name = User.GET_ALL_USERS_FROM_SPECIFIC_COUNTRY, query = "SELECT COUNT(e) FROM User e WHERE e.country = :fcountry"),
+        @NamedQuery(name = User.GET_ALL_COUNTRIES, query = "SELECT e.country FROM User e"),
+        @NamedQuery(name = User.GET_USERS_WITH_MOST_POSTS, query = "SELECT u FROM User u ORDER BY MAX(u.userPosts) DESC"),
+        @NamedQuery(name = User.GET_USERS_WITH_MOST_COMMENTS, query = "SELECT u FROM User u ORDER BY MAX(u.commentsByUser) DESC")
 })
 public class User {
 
-    public static final String GET_ALL = "USER_GET_ALL";
-    public static final String GET_COUNTRY = "USER_GET_COUNTRY";
+    public static final String GET_ALL = "GET_ALL_USERS";
+    public static final String GET_ALL_USERS_FROM_SPECIFIC_COUNTRY = "GET_ALL_USERS_FROM_SPECIFIC_COUNTRY";
+    public static final String GET_ALL_COUNTRIES = "GET_ALL_COUNTRIES";
+    public static final String GET_USERS_WITH_MOST_POSTS = "GET_USERS_WITH_MOST_POSTS";
+    public static final String GET_USERS_WITH_MOST_COMMENTS = "GET_USERS_WITH_MOST_COMMENTS";
 
     @Id
     @NotNull
@@ -49,10 +47,14 @@ public class User {
     @NotNull @Size(min = 2, max = 150)
     private String email;
 
+    @NotNull @Size(min = 2, max = 150)
+    private String country;
+
     @OneToMany(mappedBy= "userPosted", fetch= FetchType.EAGER)
     private List<Post> userPosts;
 
-    @OneToMany
+
+    @OneToMany(mappedBy = "userComments", fetch= FetchType.EAGER)
     private List<Comment> commentsByUser;
 
     public User(){}
@@ -115,4 +117,28 @@ public class User {
     }
 
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public List<Post> getUserPosts() {
+        return userPosts;
+    }
+
+    public void setUserPosts(List<Post> userPosts) {
+        this.userPosts = userPosts;
+    }
+
+    public List<Comment> getCommentsByUser() {
+        return commentsByUser;
+    }
+
+    public void setCommentsByUser(List<Comment> commentsByUser) {
+        this.commentsByUser = commentsByUser;
+    }
 }
+

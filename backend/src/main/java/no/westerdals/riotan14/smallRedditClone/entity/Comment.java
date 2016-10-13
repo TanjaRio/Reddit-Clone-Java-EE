@@ -10,5 +10,9 @@ import java.util.List;
  */
 public class Comment {
 
-    private User commentByUser;
+    private String author;
+    private String text;
+    private List<Comment> comments;
+    private int numberOfUpvotes;
+    private int numberOfDownvotes;
 }

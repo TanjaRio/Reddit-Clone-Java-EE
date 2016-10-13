@@ -5,9 +5,8 @@ import no.westerdals.riotan14.smallRedditClone.entity.Comment;
 import no.westerdals.riotan14.smallRedditClone.entity.User;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.ejb.Stateless;
+import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
@@ -18,8 +17,19 @@ import java.util.List;
  * PG5100 - Enterprise Programmering 1
  * Westerdals Oslo ACT
  */
+
+@Stateless
 public class CommentEJB {
 
+    @PersistenceContext
+    private EntityManager em;
+
+    public CommentEJB() {
+
+    }
+    public boolean createComment(String userId, String postId) {
+
+    }
 
 
 }
