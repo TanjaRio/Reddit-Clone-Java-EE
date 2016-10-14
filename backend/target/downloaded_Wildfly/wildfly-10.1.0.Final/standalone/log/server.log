@@ -1,0 +1,945 @@
+2016-10-15 00:20:53,251 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-10-15 00:20:53,733 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-10-15 00:20:53,863 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-10-15 00:20:53,865 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_65\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_65\jre
+	java.io.tmpdir = C:\Users\Bruker\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\WINDOWS\System32;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_65-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_65
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.65-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final
+	jboss.host.name = bruker-pc
+	jboss.modules.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = bruker-pc
+	jboss.qualified.host.name = bruker-pc
+	jboss.server.base.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone
+	jboss.server.config.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log
+	jboss.server.name = bruker-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration\logging.properties
+	module.path = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\modules
+	org.jboss.boot.log.file = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_65\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\jboss-modules.jar -mp C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final -Djboss.server.base.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone -Djboss.server.log.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log -Djboss.server.config.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = NO
+	user.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend
+	user.home = C:\Users\Bruker
+	user.language = no
+	user.name = Bruker
+	user.script = 
+	user.timezone = Europe/Berlin
+	user.variant = 
+2016-10-15 00:20:53,867 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman -ea -Djboss.home.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final -Dorg.jboss.boot.log.file=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration\logging.properties 
+2016-10-15 00:20:56,265 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-10-15 00:20:56,294 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.4.0.Final
+2016-10-15 00:20:56,309 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.4.0.Final
+2016-10-15 00:20:56,401 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.21.Final
+2016-10-15 00:20:56,437 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-10-15 00:20:56,452 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-10-15 00:20:56,494 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-10-15 00:20:56,512 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-10-15 00:20:56,520 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-10-15 00:20:56,521 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-10-15 00:20:56,552 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-10-15 00:20:56,594 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-10-15 00:20:56,722 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-10-15 00:20:56,767 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-10-15 00:20:56,805 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2016-10-15 00:20:56,871 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-10-15 00:20:56,887 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-10-15 00:20:56,898 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-10-15 00:20:57,361 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-10-15 00:20:57,367 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-10-15 00:20:57,463 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-10-15 00:20:57,526 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2016-10-15 00:20:57,531 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2016-10-15 00:20:58,160 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-10-15 00:20:58,714 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-10-15 00:20:58,758 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\deployments
+2016-10-15 00:20:59,247 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2016-10-15 00:20:59,266 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-10-15 00:20:59,320 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-10-15 00:20:59,331 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:20:59,334 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:20:59,336 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:20:59,338 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:20:59,340 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:20:59,343 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:20:59,670 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-10-15 00:21:00,087 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-10-15 00:21:00,090 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-10-15 00:21:00,105 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 7595ms - Started 331 of 577 services (393 services are lazy, passive or on-demand)
+2016-10-15 00:21:01,785 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data\content\8c\7b41193f29ec90284f2a07bf1a2ea49c44afc6\content
+2016-10-15 00:21:01,809 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2016-10-15 00:21:02,460 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for DB
+2016-10-15 00:21:02,629 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:21:02,893 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: DB
+	...]
+2016-10-15 00:21:02,962 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment test.war
+2016-10-15 00:21:03,043 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 62) HHH000412: Hibernate Core {5.0.10.Final}
+2016-10-15 00:21:03,045 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000206: hibernate.properties not found
+2016-10-15 00:21:03,048 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000021: Bytecode provider name : javassist
+2016-10-15 00:21:03,112 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 5.2.4.Final
+2016-10-15 00:21:03,129 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 62) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-10-15 00:21:03,326 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UserEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:app/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:module/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:global/test/UserEJB
+	java:app/test/UserEJB
+	java:module/UserEJB
+
+2016-10-15 00:21:03,327 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'StatisticsEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:app/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:module/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:global/test/StatisticsEJB
+	java:app/test/StatisticsEJB
+	java:module/StatisticsEJB
+
+2016-10-15 00:21:03,328 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'CommentEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:app/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:module/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:global/test/CommentEJB
+	java:app/test/CommentEJB
+	java:module/CommentEJB
+
+2016-10-15 00:21:03,328 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'DeleterEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:app/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:module/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:global/test/DeleterEJB
+	java:app/test/DeleterEJB
+	java:module/DeleterEJB
+
+2016-10-15 00:21:03,328 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PostEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:app/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:module/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:global/test/PostEJB
+	java:app/test/PostEJB
+	java:module/PostEJB
+
+2016-10-15 00:21:03,756 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:21:03,757 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:21:03,854 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 2.3.5 (Final)
+2016-10-15 00:21:04,184 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 4) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#DB'
+2016-10-15 00:21:04,274 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2016-10-15 00:21:04,532 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 4) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-10-15 00:21:04,539 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 4) HHH000431: Unable to determine H2 database version, certain features may not work
+2016-10-15 00:21:04,616 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 4) Envers integration enabled? : true
+2016-10-15 00:21:05,717 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 4) MSC000001: Failed to start service jboss.persistenceunit."test.war#DB": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#DB": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:178)
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.<init>(EntityLoadQueryDetails.java:89)
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.<init>(AbstractLoadPlanBasedEntityLoader.java:82)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:103)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:38)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:83)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:77)
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30)
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2254)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2276)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:3876)
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:3858)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:444)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 9 more
+
+2016-10-15 00:21:05,725 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 3) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "test.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:21:05,728 ERROR [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:21:05,739 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 4) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:21:05,788 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 4) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2016-10-15 00:21:05,815 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 87ms
+2016-10-15 00:21:05,822 INFO  [org.jboss.as.controller] (management-handler-thread - 3) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."test.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator, service jboss.deployment.unit."test.war".component.PostEJB.WeldInterceptorBindingsService, service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.deployment.unit."test.war".component.StatisticsEJB.WeldInterceptorBindingsService, WFLYCTL0208: ... and 13 more ] 
+      service jboss.deployment.unit."test.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator, service jboss.deployment.unit."test.war".component.PostEJB.WeldInterceptorBindingsService, service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./test, WFLYCTL0208: ... and 17 more ] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.VIEW."no.westerdals.riotan14.backend.ejb.DeleterEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.PostEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component.PostEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.PostEJB.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.StatisticsEJB.START] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.StatisticsEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.UserEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.UserEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component.UserEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.UserEJB.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."test.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START, service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."test.war".component.StatisticsEJB.START, WFLYCTL0208: ... and 8 more ] 
+      service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START, service jboss.deployment.unit."test.war".component.UserEJB.START, service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.naming.context.java.app.test.env (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.BeanManager (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultContextService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultDataSource (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultManagedExecutorService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultManagedScheduledExecutorService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultManagedThreadFactory (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.EJBContext (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.TimerService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.TransactionSynchronizationRegistry (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.UserTransaction (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.env (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.backend.ejb.DeleterEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService, service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService, service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService, service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService, service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.persistenceunit."test.war#DB" (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."test.war".component.PostEJB.START, service jboss.deployment.unit."test.war".deploymentCompleteService, WFLYCTL0208: ... and 11 more ] 
+      service jboss.undertow.deployment.default-server.default-host./test (missing) dependents: [service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test] 
+      service jboss.undertow.deployment.default-server.default-host./test.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./test.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."test.war".undertow (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."test.war#DB"
+
+2016-10-15 00:21:05,930 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2016-10-15 00:21:05,933 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2016-10-15 00:21:05,957 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-10-15 00:21:06,085 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-10-15 00:21:06,090 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2016-10-15 00:21:06,124 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-10-15 00:21:06,137 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2016-10-15 00:21:06,138 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-10-15 00:21:06,140 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-10-15 00:21:06,146 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-10-15 00:21:06,162 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 212ms
+2016-10-15 00:30:55,690 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-10-15 00:30:56,272 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-10-15 00:30:56,426 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-10-15 00:30:56,429 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_65\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_65\jre
+	java.io.tmpdir = C:\Users\Bruker\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\WINDOWS\System32;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_65-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_65
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.65-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final
+	jboss.host.name = bruker-pc
+	jboss.modules.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = bruker-pc
+	jboss.qualified.host.name = bruker-pc
+	jboss.server.base.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone
+	jboss.server.config.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log
+	jboss.server.name = bruker-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration\logging.properties
+	module.path = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\modules
+	org.jboss.boot.log.file = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_65\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\jboss-modules.jar -mp C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final -Djboss.server.base.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone -Djboss.server.log.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log -Djboss.server.config.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = NO
+	user.dir = C:\developement\Enterprise Programmering\SmallRedditClone\backend
+	user.home = C:\Users\Bruker
+	user.language = no
+	user.name = Bruker
+	user.script = 
+	user.timezone = Europe/Berlin
+	user.variant = 
+2016-10-15 00:30:56,430 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman -ea -Djboss.home.dir=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final -Dorg.jboss.boot.log.file=C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration\logging.properties 
+2016-10-15 00:30:58,953 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-10-15 00:30:58,984 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.4.0.Final
+2016-10-15 00:30:59,005 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.4.0.Final
+2016-10-15 00:30:59,112 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-10-15 00:30:59,115 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-10-15 00:30:59,126 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-10-15 00:30:59,145 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-10-15 00:30:59,165 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-10-15 00:30:59,210 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-10-15 00:30:59,212 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-10-15 00:30:59,237 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-10-15 00:30:59,254 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-10-15 00:30:59,298 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-10-15 00:30:59,480 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-10-15 00:30:59,523 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-10-15 00:30:59,526 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 4.0.21.Final
+2016-10-15 00:30:59,613 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2016-10-15 00:30:59,614 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-10-15 00:30:59,801 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-10-15 00:30:59,962 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2016-10-15 00:30:59,977 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2016-10-15 00:30:59,982 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-10-15 00:30:59,983 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-10-15 00:31:00,797 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-10-15 00:31:01,223 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-10-15 00:31:01,273 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\deployments
+2016-10-15 00:31:01,511 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-10-15 00:31:01,608 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-10-15 00:31:01,619 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2016-10-15 00:31:01,684 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:01,687 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:01,688 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:01,692 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:01,689 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:01,695 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:02,222 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-10-15 00:31:02,803 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-10-15 00:31:02,807 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-10-15 00:31:02,808 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 7995ms - Started 331 of 577 services (393 services are lazy, passive or on-demand)
+2016-10-15 00:31:05,210 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data\content\70\ad99f971d46464e178b221f5b57d8fcc1d2c48\content
+2016-10-15 00:31:05,237 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2016-10-15 00:31:06,269 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for DB
+2016-10-15 00:31:06,437 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:31:06,740 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 61) HHH000204: Processing PersistenceUnitInfo [
+	name: DB
+	...]
+2016-10-15 00:31:06,824 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment test.war
+2016-10-15 00:31:06,876 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 61) HHH000412: Hibernate Core {5.0.10.Final}
+2016-10-15 00:31:06,883 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 61) HHH000206: hibernate.properties not found
+2016-10-15 00:31:06,888 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 61) HHH000021: Bytecode provider name : javassist
+2016-10-15 00:31:06,939 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.2.4.Final
+2016-10-15 00:31:06,941 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 61) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-10-15 00:31:07,079 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'UserEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:app/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:module/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:global/test/UserEJB
+	java:app/test/UserEJB
+	java:module/UserEJB
+
+2016-10-15 00:31:07,081 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'StatisticsEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:app/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:module/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:global/test/StatisticsEJB
+	java:app/test/StatisticsEJB
+	java:module/StatisticsEJB
+
+2016-10-15 00:31:07,081 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'CommentEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:app/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:module/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:global/test/CommentEJB
+	java:app/test/CommentEJB
+	java:module/CommentEJB
+
+2016-10-15 00:31:07,082 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'DeleterEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:app/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:module/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:global/test/DeleterEJB
+	java:app/test/DeleterEJB
+	java:module/DeleterEJB
+
+2016-10-15 00:31:07,083 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PostEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:app/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:module/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:global/test/PostEJB
+	java:app/test/PostEJB
+	java:module/PostEJB
+
+2016-10-15 00:31:07,376 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:07,387 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:07,457 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 2.3.5 (Final)
+2016-10-15 00:31:07,765 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 3) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#DB'
+2016-10-15 00:31:07,854 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0002: Started client-mappings cache from ejb container
+2016-10-15 00:31:08,106 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 3) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-10-15 00:31:08,115 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 3) HHH000431: Unable to determine H2 database version, certain features may not work
+2016-10-15 00:31:08,178 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 3) Envers integration enabled? : true
+2016-10-15 00:31:08,916 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 3) MSC000001: Failed to start service jboss.persistenceunit."test.war#DB": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#DB": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts, no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:178)
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.<init>(EntityLoadQueryDetails.java:89)
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.<init>(AbstractLoadPlanBasedEntityLoader.java:82)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:103)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:38)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:83)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:77)
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30)
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2254)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2276)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:3876)
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:3858)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:444)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 9 more
+
+2016-10-15 00:31:08,926 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 3) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "test.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts, no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:31:08,929 ERROR [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts, no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:31:08,944 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 3) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:31:08,982 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2016-10-15 00:31:09,011 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 81ms
+2016-10-15 00:31:09,020 INFO  [org.jboss.as.controller] (management-handler-thread - 3) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."test.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.WeldInstantiator, service jboss.deployment.unit."test.war".component.UserEJB.WeldInstantiator, service jboss.deployment.unit."test.war".component.CommentEJB.WeldInterceptorBindingsService, service jboss.deployment.unit."test.war".component.PostEJB.WeldInstantiator, WFLYCTL0208: ... and 6 more ] 
+      service jboss.deployment.unit."test.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator, service jboss.deployment.unit."test.war".component.PostEJB.WeldInterceptorBindingsService, service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./test, WFLYCTL0208: ... and 17 more ] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.CommentEJB.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.VIEW."no.westerdals.riotan14.backend.ejb.DeleterEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.PostEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component.PostEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.StatisticsEJB.START] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.StatisticsEJB.START] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.StatisticsEJB.START] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.StatisticsEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.StatisticsEJB.ejb3.timerService (missing) dependents: [service jboss.deployment.unit."test.war".component.StatisticsEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component.UserEJB.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".component.UserEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."test.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."test.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".START, service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."test.war".component.StatisticsEJB.START, service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START, WFLYCTL0208: ... and 3 more ] 
+      service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."test.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."test.war".component.CommentEJB.START, service jboss.deployment.unit."test.war".component.StatisticsEJB.START, service jboss.deployment.unit."test.war".component.PostEJB.START, WFLYCTL0208: ... and 3 more ] 
+      service jboss.naming.context.java.app.test.env (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.BeanManager (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultContextService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultDataSource (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultManagedExecutorService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultManagedScheduledExecutorService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.DefaultManagedThreadFactory (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.EJBContext (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.TimerService (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.TransactionSynchronizationRegistry (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.UserTransaction (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.env (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.backend.ejb.DeleterEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService, service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService, service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.naming.context.java.module.test.test.env."no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB".em (missing) dependents: [service jboss.deployment.unit."test.war".jndiDependencyService, service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.persistenceunit."test.war#DB" (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."test.war".component.StatisticsEJB.START, service jboss.deployment.unit."test.war".component.PostEJB.START, WFLYCTL0208: ... and 15 more ] 
+      service jboss.undertow.deployment.default-server.default-host./test (missing) dependents: [service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./test.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./test.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."test.war".undertow (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."test.war#DB"
+
+2016-10-15 00:31:10,453 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data\content\79\40d3edc7ef496e2f8049fd1f4a39c09fd2055a\content
+2016-10-15 00:31:10,457 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2016-10-15 00:31:10,768 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for DB
+2016-10-15 00:31:10,798 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:31:10,798 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 61) HHH000204: Processing PersistenceUnitInfo [
+	name: DB
+	...]
+2016-10-15 00:31:10,830 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment test.war
+2016-10-15 00:31:10,891 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'UserEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:app/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:module/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:global/test/UserEJB
+	java:app/test/UserEJB
+	java:module/UserEJB
+
+2016-10-15 00:31:10,893 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'StatisticsEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:app/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:module/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:global/test/StatisticsEJB
+	java:app/test/StatisticsEJB
+	java:module/StatisticsEJB
+
+2016-10-15 00:31:10,894 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'CommentEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:app/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:module/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:global/test/CommentEJB
+	java:app/test/CommentEJB
+	java:module/CommentEJB
+
+2016-10-15 00:31:10,894 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'DeleterEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:app/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:module/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:global/test/DeleterEJB
+	java:app/test/DeleterEJB
+	java:module/DeleterEJB
+
+2016-10-15 00:31:10,896 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PostEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:app/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:module/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:global/test/PostEJB
+	java:app/test/PostEJB
+	java:module/PostEJB
+
+2016-10-15 00:31:11,024 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:11,026 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:11,043 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0002: Started client-mappings cache from ejb container
+2016-10-15 00:31:11,084 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#DB'
+2016-10-15 00:31:11,088 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 61) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-10-15 00:31:11,089 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 61) HHH000431: Unable to determine H2 database version, certain features may not work
+2016-10-15 00:31:11,101 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 61) Envers integration enabled? : true
+2016-10-15 00:31:11,215 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 61) MSC000001: Failed to start service jboss.persistenceunit."test.war#DB": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#DB": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:178)
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.<init>(EntityLoadQueryDetails.java:89)
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.<init>(AbstractLoadPlanBasedEntityLoader.java:82)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:103)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:38)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:83)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:77)
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30)
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2254)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2276)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:3876)
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:3858)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:444)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 9 more
+
+2016-10-15 00:31:11,222 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "test.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:31:11,223 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:31:11,234 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:31:11,269 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2016-10-15 00:31:11,323 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 99ms
+2016-10-15 00:31:11,325 INFO  [org.jboss.as.controller] (management-handler-thread - 1) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."test.war".component.CommentEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.CommentEJB.START] 
+      service jboss.deployment.unit."test.war".component.DeleterEJB.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."test.war".component.DeleterEJB.WeldInstantiator] 
+      service jboss.deployment.unit."test.war".component.PostEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.PostEJB.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."test.war".component.PostEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.VIEW."no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB".LOCAL (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component.UserEJB.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."test.war".component.UserEJB.START] 
+      service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."test.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."test.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./test, service jboss.deployment.unit."test.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./test] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."test.war#DB"
+
+2016-10-15 00:31:12,857 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location C:\developement\Enterprise Programmering\SmallRedditClone\backend\target\downloaded_Wildfly\wildfly-10.1.0.Final\standalone\data\content\da\0bd8d0413c4919b7981d8653169428dda50f5e\content
+2016-10-15 00:31:12,863 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2016-10-15 00:31:13,171 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for DB
+2016-10-15 00:31:13,204 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:31:13,205 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 61) HHH000204: Processing PersistenceUnitInfo [
+	name: DB
+	...]
+2016-10-15 00:31:13,237 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment test.war
+2016-10-15 00:31:13,259 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'UserEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:app/test/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:module/UserEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB
+	java:global/test/UserEJB
+	java:app/test/UserEJB
+	java:module/UserEJB
+
+2016-10-15 00:31:13,260 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'StatisticsEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:app/test/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:module/StatisticsEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.StatisticsEJB
+	java:global/test/StatisticsEJB
+	java:app/test/StatisticsEJB
+	java:module/StatisticsEJB
+
+2016-10-15 00:31:13,261 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'CommentEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:app/test/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:module/CommentEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB
+	java:global/test/CommentEJB
+	java:app/test/CommentEJB
+	java:module/CommentEJB
+
+2016-10-15 00:31:13,261 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'DeleterEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:app/test/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:module/DeleterEJB!no.westerdals.riotan14.backend.ejb.DeleterEJB
+	java:global/test/DeleterEJB
+	java:app/test/DeleterEJB
+	java:module/DeleterEJB
+
+2016-10-15 00:31:13,262 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PostEJB' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:app/test/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:module/PostEJB!no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB
+	java:global/test/PostEJB
+	java:app/test/PostEJB
+	java:module/PostEJB
+
+2016-10-15 00:31:13,393 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:13,394 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-15 00:31:13,420 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0002: Started client-mappings cache from ejb container
+2016-10-15 00:31:13,454 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#DB'
+2016-10-15 00:31:13,456 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 61) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-10-15 00:31:13,457 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 61) HHH000431: Unable to determine H2 database version, certain features may not work
+2016-10-15 00:31:13,463 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 61) Envers integration enabled? : true
+2016-10-15 00:31:13,555 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 61) MSC000001: Failed to start service jboss.persistenceunit."test.war#DB": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#DB": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:178)
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.<init>(EntityLoadQueryDetails.java:89)
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.<init>(AbstractLoadPlanBasedEntityLoader.java:82)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:103)
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:38)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:83)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:77)
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30)
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2254)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2276)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:3876)
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:3858)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:444)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 9 more
+
+2016-10-15 00:31:13,560 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 3) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "test.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:31:13,561 ERROR [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#DB\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"test.war#DB\": javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: DB] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [no.westerdals.riotan14.smallRedditClone.backend.entity.User.commentsByUser, no.westerdals.riotan14.smallRedditClone.backend.entity.User.userPosts]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"test.war#DB\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2016-10-15 00:31:13,570 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#DB'
+2016-10-15 00:31:13,604 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2016-10-15 00:31:13,648 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 85ms
+2016-10-15 00:31:13,651 INFO  [org.jboss.as.controller] (management-handler-thread - 3) WFLYCTL0183: Service status report
+WFLYCTL0185:    Newly corrected services:
+      service jboss.deployment.unit."test.war".component.CommentEJB.WeldInterceptorBindingsService (no longer required)
+      service jboss.deployment.unit."test.war".component."com.sun.faces.config.ConfigureListener".CREATE (no longer required)
+      service jboss.deployment.unit."test.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (no longer required)
+      service jboss.undertow.deployment.default-server.default-host./test.UndertowDeploymentInfoService (no longer required)
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."test.war#DB"
+
+2016-10-15 00:31:13,697 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2016-10-15 00:31:13,713 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2016-10-15 00:31:13,737 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-10-15 00:31:13,764 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-10-15 00:31:13,767 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2016-10-15 00:31:13,774 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-10-15 00:31:13,810 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2016-10-15 00:31:13,811 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-10-15 00:31:13,823 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-10-15 00:31:13,831 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-10-15 00:31:13,862 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 124ms

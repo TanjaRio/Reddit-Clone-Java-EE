@@ -21,12 +21,12 @@
             in module B when executing tests in A that have dependency on B.
         -->
         <dependency>
-            <groupId>org.pg5100.exam_example</groupId>
+            <groupId>no.westerdals.riotan14</groupId>
             <artifactId>backend</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.pg5100.exam_example</groupId>
+            <groupId>no.westerdals.riotan14</groupId>
             <artifactId>frontend</artifactId>
             <version>${project.version}</version>
             <type>war</type>

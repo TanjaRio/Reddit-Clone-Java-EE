@@ -9,25 +9,68 @@
 >
 
 <ui:composition template="layout.xhtml">
-    <ui:define name="title">Create a new book</ui:define>
+
+    <ui:define name="title">Reddit Clone Home Page</ui:define>
+
     <ui:define name="content">
-        <h:form>
-            <h:panelGrid columns="2">
-                <h:outputLabel value="ISBN : "/>
-                <h:inputText value="#{bookController.book.isbn}"/>
-                <h:outputLabel value="Title :"/>
-                <h:inputText value="#{bookController.book.title}"/>
-                <h:outputLabel value="Price : "/>
-                <h:inputText value="#{bookController.book.price}"/>
-                <h:outputLabel value="Description : "/>
-                <h:inputTextarea value="#{bookController.book.description}" cols="20" rows="5"/>
-                <h:outputLabel value="Number of pages : "/>
-                <h:inputText value="#{bookController.book.nbOfPage}"/>
-                <h:outputLabel value="Illustrations : "/>
-                <h:selectBooleanCheckbox value="#{bookController.book.illustrations}"/>
-            </h:panelGrid>
-            <h:commandButton value="Create a book" action="#{bookController.doCreateBook}"/>
-        </h:form>
+
+
+        <c:if test="#{loggingController.loggedIn}">
+            <h:button value="Create Event" outcome="newEvent.xhtml" id="createEvent"/>
+        </c:if>
+
+
+        <h2>Future Events</h2>
+
+        <c:if test="#{loggingController.loggedIn}">
+            <h:form id="showOnlyOwnCountryForm">
+                <h:selectBooleanCheckbox value="#{eventController.showOnlyOwnCountry}"
+                                         id="showOnlyOwnCountry" onclick="submit()"/>
+                <h:outputLabel for="showOnlyOwnCountry" value="Only #{loggingController.userCountry}"/>
+            </h:form>
+        </c:if>
+
+        <c:choose>
+            <c:when test="#{eventController.events.size() == 0}">
+                <h:outputText value="No events yet :( Be the first to create one!"/>
+            </c:when>
+
+            <c:otherwise>
+
+                <h:dataTable value="#{eventController.events}" var="event" border="1" id="eventTable">
+                    <h:column>
+                        <f:facet name="header">Country</f:facet>
+                        <h:outputText value="#{event.country}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Title</f:facet>
+                        <h:outputText value="#{event.title}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Location</f:facet>
+                        <h:outputText value="#{event.location}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Participants</f:facet>
+                        <h:outputText value="#{fn:length(event.attendingUsers)}"/>
+                    </h:column>
+
+                    <c:if test="#{loggingController.loggedIn}">
+                        <h:column>
+                            <f:facet name="header">Going</f:facet>
+                            <h:form>
+                                <h:selectBooleanCheckbox
+                                        value="#{eventController.attendMap[event.id]}"
+                                        onclick="submit()"
+                                        valueChangeListener="#{eventController.updateAttendance(event.id, ! eventController.attendMap[event.id])}"/>
+                            </h:form>
+                        </h:column>
+                    </c:if>
+                </h:dataTable>
+            </c:otherwise>
+        </c:choose>
+
     </ui:define>
 
 </ui:composition>
+</html>

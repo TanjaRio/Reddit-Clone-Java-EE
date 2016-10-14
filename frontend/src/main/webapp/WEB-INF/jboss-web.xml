@@ -1,4 +1,4 @@
 <?xml version="1.0" ?>
 <jboss-web>
-    <context-root>/exam_example</context-root>
+    <context-root>/small_reddit_clone</context-root>
 </jboss-web>

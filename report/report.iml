@@ -11,8 +11,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.pg5100.exam_example:backend:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="backend" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
-    <orderEntry type="library" name="Maven: org.pg5100.exam_example:frontend:war:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="frontend" />
   </component>
 </module>

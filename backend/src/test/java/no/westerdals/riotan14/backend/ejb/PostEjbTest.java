@@ -1,10 +1,9 @@
 package no.westerdals.riotan14.backend.ejb;
-import no.westerdals.riotan14.smallRedditClone.ejb.CommentEJB;
-import no.westerdals.riotan14.smallRedditClone.ejb.PostEJB;
-import no.westerdals.riotan14.smallRedditClone.ejb.UserEJB;
-import no.westerdals.riotan14.smallRedditClone.entity.Post;
+import no.westerdals.riotan14.smallRedditClone.backend.ejb.CommentEJB;
+import no.westerdals.riotan14.smallRedditClone.backend.ejb.PostEJB;
+import no.westerdals.riotan14.smallRedditClone.backend.ejb.UserEJB;
 
-import no.westerdals.riotan14.smallRedditClone.entity.User;
+import no.westerdals.riotan14.smallRedditClone.backend.entity.User;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -17,8 +16,6 @@ import org.junit.runner.RunWith;
 import javax.ejb.EJB;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -59,10 +56,14 @@ public class PostEjbTest {
 
     @Test
     public void testGetCountries(){
+        userEJB.createUser("en", "test","tanja", "tanjario@hotmail.no", null, "rio", "Norway");
+        int result = postEjb.getCountOfPostsFromCountry("Norway");
+        assertEquals(1, result);
+    }
 
-        Query query = em.createNamedQuery(Post.GET_COUNTRIES);
-        User user = userEJB.createUser();
-        List<User> users = query.getResultList();
-        assertEquals(4, users.size());
+    @Test
+    public void testGetTotalPostCount(){
+        int result = postEjb.getTotalPostCount();
+        assertEquals(0, result);
     }
 }
