@@ -16,28 +16,20 @@
 
 
         <c:if test="#{loggingController.loggedIn}">
-            <h:button value="Create Event" outcome="newEvent.xhtml" id="createEvent"/>
+            <h:button value="Create Post" outcome="createPost.xhtml" id="createPost"/>
         </c:if>
 
 
-        <h2>Future Events</h2>
-
-        <c:if test="#{loggingController.loggedIn}">
-            <h:form id="showOnlyOwnCountryForm">
-                <h:selectBooleanCheckbox value="#{eventController.showOnlyOwnCountry}"
-                                         id="showOnlyOwnCountry" onclick="submit()"/>
-                <h:outputLabel for="showOnlyOwnCountry" value="Only #{loggingController.userCountry}"/>
-            </h:form>
-        </c:if>
+        <h2>Posts</h2>
 
         <c:choose>
-            <c:when test="#{eventController.events.size() == 0}">
-                <h:outputText value="No events yet :( Be the first to create one!"/>
+            <c:when test="#{postController.events.size() == 0}">
+                <h:outputText value="No posts yet created. Be the first to create one!"/>
             </c:when>
 
             <c:otherwise>
 
-                <h:dataTable value="#{eventController.events}" var="event" border="1" id="eventTable">
+                <h:dataTable value="#{postController.events}" var="event" border="1" id="eventTable">
                     <h:column>
                         <f:facet name="header">Country</f:facet>
                         <h:outputText value="#{event.country}"/>

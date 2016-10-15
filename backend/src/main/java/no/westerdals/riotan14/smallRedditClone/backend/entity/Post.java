@@ -27,7 +27,7 @@ public class Post {
     private Long postId;
 
     @OneToMany(targetEntity=Comment.class, fetch=FetchType.EAGER, cascade = CascadeType.ALL)
-    @OrderBy("postedDate DESC")
+    //@OrderBy("postedDate DESC")
     private List<Comment> comments;
 
     private String author;

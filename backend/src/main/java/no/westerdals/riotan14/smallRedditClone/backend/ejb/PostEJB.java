@@ -51,7 +51,7 @@ public class PostEJB {
         return result;
     }
 
-    public List<Post> getAllNews() {
+    public List<Post> getAllPosts() {
         return em.createNamedQuery(Post.GET_ALL).getResultList();
 
     }

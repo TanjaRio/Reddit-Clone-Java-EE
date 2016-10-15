@@ -36,20 +36,6 @@ public class LoggingController implements Serializable{
     public LoggingController(){
     }
 
-    public String getUserCountry(){
-        if(registeredUser == null){
-            return null;
-        }
-
-        return userEJB.getUser(registeredUser).getCountry();
-    }
-
-    public List<String> getCountries(){
-        return Countries.getCountries();
-    }
-
-
-
     public boolean isLoggedIn(){
         return registeredUser != null;
     }
@@ -60,7 +46,7 @@ public class LoggingController implements Serializable{
     }
 
     public User getUser(){
-        return userEJB.getUser(registeredUser);
+        return userEJB.findUser(registeredUser);
     }
 
     public String logOut(){

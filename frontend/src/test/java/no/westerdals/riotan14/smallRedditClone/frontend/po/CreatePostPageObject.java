@@ -18,9 +18,9 @@ public class CreatePostPageObject extends PageObject {
         return driver.getTitle().equals("Create New Post");
     }
 
-    public HomePageObject createPost(String author, String content){
-        setText("createEventForm:author",author);
-        setText("createEventForm:content",content);
+    public CreatePostPageObject createPost(String author, String content){
+        setText("createPostForm:author",author);
+        setText("createPostForm:content",content);
 
 
         driver.findElement(By.id("createPostForm:createButton")).click();
@@ -29,7 +29,7 @@ public class CreatePostPageObject extends PageObject {
         if(isOnPage()){
             return null;
         } else {
-            return new HomePageObject(driver);
+            return new CreatePostPageObject(driver);
         }
     }
 

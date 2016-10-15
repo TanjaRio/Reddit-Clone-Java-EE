@@ -54,7 +54,7 @@ public class User {
     private List<Post> userPosts;
 
 
-    @OneToMany(targetEntity=Comment.class, fetch=FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(targetEntity=Comment.class, fetch=FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Comment> commentsByUser;
 
     public User(){}

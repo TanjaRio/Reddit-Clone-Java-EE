@@ -49,9 +49,8 @@ public abstract class PageObject {
 
     protected Boolean waitForPageToLoad() {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        WebDriverWait wait = new WebDriverWait(driver, 10); //give up after 10 seconds
+        WebDriverWait wait = new WebDriverWait(driver, 10);
 
-        //keep executing the given JS till it returns "true", when page is fully loaded and ready
         return wait.until((ExpectedCondition<Boolean>) input -> {
             String res = jsExecutor.executeScript("return /loaded|complete/.test(document.readyState);").toString();
             return Boolean.parseBoolean(res);
